@@ -1,4 +1,4 @@
-# Demo.LinkedList.Reverse
+# Demo.LinkedList.Reverse [![Build status](https://ci.appveyor.com/api/projects/status/kdp89hu69tuob9an?svg=true)](https://ci.appveyor.com/project/ronin1/demo-linkedlist-reverse)
 A C# Reverse link list demo using implicit pointer assignment and no recursion
 
 ### Running the code in the console: 
