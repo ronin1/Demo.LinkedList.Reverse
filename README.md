@@ -3,7 +3,7 @@ A C# Reverse link list demo using implicit pointer assignment and no recursion
 
 ### Running the code in the console: 
 ```
-*>* LinkedListDemo.exe A B C D E F G
+> LinkedListDemo.exe A B C D E F G
 ```
 
 ### Will output:
