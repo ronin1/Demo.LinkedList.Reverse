@@ -8,17 +8,17 @@ namespace LinkedListDemo
 {
 	class Program
 	{
-		static Node<string> BuildList(string[] values)
+		static Node<T> BuildList<T>(T[] values)
 		{
 			if (values == null || values.Length == 0)
 				return null;
 
-			var last = new Node<string> { Value = values[0] };
-			Node<string> head = last;
+			var last = new Node<T> { Value = values[0] };
+			Node<T> head = last;
 
             for (int i=1; i<values.Length; i++)
 			{
-				var n = new Node<string> { Value = values[i] };
+				var n = new Node<T> { Value = values[i] };
 				last.Next = n;
 				last = n;
 			}
@@ -68,9 +68,11 @@ namespace LinkedListDemo
 		{
 			Node<string> list = BuildList(args);
 			PrintList(list, "Original: ");
+
 			Node<string> reveresed = Reverse(list);
 			PrintList(reveresed, "Reversed: ");
 			PrintList(list, "Original: ");
+
 #if DEBUG
 			Console.ReadKey();
 #endif
